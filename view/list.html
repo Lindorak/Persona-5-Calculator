@@ -1,11 +1,9 @@
 <p>
-    <div class="ui mini input search-container">
-        <label class="search-label">
-          Filter:
-        </label>
-        <input type="text" size="30" ng-model="filterStr" autocorrect="off" autocomplete="off" spellcheck="false" class="search-box">
-        &nbsp;
-        <button ng:click="filterStr = ''" class="ui mini button clear-button">Clear</button>
+    <div class="modern-search-container">
+        <div class="search-input-wrapper">
+            <input type="text" size="30" ng-model="filterStr" autocorrect="off" autocomplete="off" spellcheck="false" class="modern-search-input" placeholder="Search personas...">
+        </div>
+        <button ng:click="filterStr = ''" class="modern-clear-btn">✖ Clear</button>
     </div>
 </p>
 
@@ -64,8 +62,13 @@
         <td class="mobile-hidden {{persona.bless}}">{{persona.bless}}</td>
         <td class="mobile-hidden {{persona.curse}}">{{persona.curse}}</td>
 
-        <td class="mobile-hidden left-border {{persona.area}}"><span title="{{persona.floor}}" class="dlc-label" 
-            style="background-color:#c3c8cb" ng-if="persona.floor">?</span> {{persona.area}}</td>
+        <td class="mobile-hidden left-border">
+            <div ng-if="persona.area" class="mementos-location">
+                <span class="area-label">{{persona.area}}</span>
+                <span ng-if="persona.floor" class="floor-label">{{persona.floor}}</span>
+            </div>
+            <span ng-if="!persona.area" class="no-location">-</span>
+        </td>
     </tr>
     </tbody>
 </table>

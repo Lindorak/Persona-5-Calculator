@@ -52,6 +52,95 @@ tr:hover td:last-child {
     margin-top: 10px;
 }
 
+/* Main Title Styling */
+.main-title {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.main-title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.title-link {
+    background: linear-gradient(135deg, #6f42c1 0%, #5a2d91 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.title-link:hover {
+    transform: scale(1.05);
+    text-decoration: none !important;
+    filter: brightness(1.2);
+}
+
+.title-link:visited {
+    background: linear-gradient(135deg, #6f42c1 0%, #5a2d91 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none !important;
+}
+
+/* Royal version title - red color */
+a[href="indexRoyal.html"].title-link {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+a[href="indexRoyal.html"].title-link:visited {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Dark mode title styling - keep same colors */
+.dark-theme .title-link {
+    background: linear-gradient(135deg, #6f42c1 0%, #5a2d91 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark-theme .title-link:visited {
+    background: linear-gradient(135deg, #6f42c1 0%, #5a2d91 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark-theme a[href="indexRoyal.html"].title-link {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark-theme a[href="indexRoyal.html"].title-link:visited {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive title */
+@media only screen and (max-width: 768px) {
+    .main-title h1 {
+        font-size: 1.8rem;
+    }
+}
+
 .infoTable, .infoTable th {
     border-collapse: collapse;
     text-align: center;
@@ -149,6 +238,60 @@ tr:hover td:last-child {
     margin-left: 5px;
 }
 
+/* Mementos Location Styling */
+.mementos-location {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+}
+
+.area-label {
+    background-color: #6f42c1;
+    display: inline-block;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.floor-label {
+    background-color: #17a2b8;
+    display: inline-block;
+    padding: .15em .5em .2em;
+    font-size: 70%;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.no-location {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Dark mode mementos styling */
+.dark-theme .area-label {
+    background-color: #8a63d2;
+}
+
+.dark-theme .floor-label {
+    background-color: #20c997;
+}
+
+.dark-theme .no-location {
+    color: #adb5bd;
+}
+
 .persona-name {
     vertical-align: inherit;
 }
@@ -170,4 +313,626 @@ tr:hover td:last-child {
     align-items: center;
     justify-content: center;
     max-width: 50%;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    background: #007bff;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.nav-btn:visited {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Responsive navigation for mobile */
+@media only screen and (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        width: 200px;
+    }
+}
+
+/* Version Navigation Section */
+.version-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+/* Responsive version navigation */
+@media only screen and (max-width: 768px) {
+    .version-nav .nav-btn {
+        width: 200px;
+    }
+}
+
+/* Dark Mode Styles */
+.theme-toggle-btn {
+    background: #28a745 !important;
+}
+
+.theme-toggle-btn:hover {
+    background: #1e7e34 !important;
+}
+
+/* Version button styling - inherits all nav-btn properties */
+.nav-btn.version-btn {
+    background: #6f42c1 !important; /* Purple for "Switch to Original" */
+}
+
+.nav-btn.version-btn:hover {
+    background: #5a2d91 !important;
+}
+
+/* Specific styling for "Switch to Royal" button */
+.nav-btn[href="indexRoyal.html"] {
+    background: #dc3545 !important; /* Red for "Switch to Royal" */
+}
+
+.nav-btn[href="indexRoyal.html"]:hover {
+    background: #c82333 !important;
+}
+
+/* Light theme (default) */
+.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-theme a {
+    color: #007bff;
+}
+
+.light-theme a:hover {
+    color: #0056b3;
+}
+
+.light-theme .ui.table {
+    background: #ffffff;
+    color: #333333;
+}
+
+.light-theme .ui.table th {
+    background: #f8f9fa;
+    color: #333333;
+}
+
+.light-theme .infoTable th, 
+.light-theme .infoTable td {
+    border: 1px solid #dee2e6;
+}
+
+/* Dark theme */
+.dark-theme {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-theme a {
+    color: #66b3ff;
+}
+
+.dark-theme a:hover {
+    color: #99ccff;
+}
+
+.dark-theme #content {
+    background-color: #1a1a1a;
+}
+
+.dark-theme .ui.table {
+    background: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-theme .ui.table th {
+    background: #3d3d3d !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid #555555 !important;
+}
+
+.dark-theme .ui.table td {
+    border-top: 1px solid #404040 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Override the general td color for resistance type cells */
+.dark-theme .ui.table td.wk,
+.dark-theme .ui.table td.Weak {
+    color: #ff6b6b !important;
+}
+
+.dark-theme .ui.table td.rs,
+.dark-theme .ui.table td.Resist {
+    color: #4dabf7 !important;
+}
+
+.dark-theme .ui.table td.nu,
+.dark-theme .ui.table td.Null {
+    color: #ced4da !important;
+}
+
+.dark-theme .ui.table td.rp,
+.dark-theme .ui.table td.Repel {
+    color: #ffd43b !important;
+}
+
+.dark-theme .ui.table td.ab,
+.dark-theme .ui.table td.Absorb {
+    color: #51cf66 !important;
+}
+
+/* Settings page text styling for dark mode */
+.dark-theme p {
+    color: #e0e0e0 !important;
+}
+
+.dark-theme .ui.form label {
+    color: #e0e0e0 !important;
+}
+
+.dark-theme .ui.checkbox label {
+    color: #e0e0e0 !important;
+}
+
+.dark-theme .ui.checkbox label:before {
+    background: #3d3d3d !important;
+    border: 1px solid #555555 !important;
+}
+
+.dark-theme .ui.checkbox label:after {
+    color: #ffffff !important;
+}
+
+.dark-theme .ui.checkbox input:checked ~ label:before {
+    background: #007bff !important;
+    border-color: #007bff !important;
+}
+
+/* Modern Search Components */
+.modern-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.modern-search-input {
+    background: #ffffff;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #495057;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-width: 280px;
+    outline: none;
+}
+
+.modern-search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+    transform: translateY(-1px);
+}
+
+.modern-search-input::placeholder {
+    color: #adb5bd;
+    font-style: italic;
+}
+
+.modern-clear-btn {
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+    outline: none;
+}
+
+.modern-clear-btn:hover {
+    background: linear-gradient(135deg, #495057 0%, #343a40 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Dark mode search styling */
+.dark-theme .modern-search-input {
+    background: #3d3d3d;
+    border-color: #555555;
+    color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.dark-theme .modern-search-input:focus {
+    border-color: #66b3ff;
+    box-shadow: 0 4px 12px rgba(102,179,255,0.3);
+}
+
+.dark-theme .modern-search-input::placeholder {
+    color: #6c757d;
+}
+
+.dark-theme .modern-clear-btn {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    box-shadow: 0 2px 4px rgba(220,53,69,0.3);
+}
+
+.dark-theme .modern-clear-btn:hover {
+    background: linear-gradient(135deg, #c82333 0%, #a71e2a 100%);
+    box-shadow: 0 4px 8px rgba(220,53,69,0.4);
+}
+
+/* Responsive search */
+@media only screen and (max-width: 768px) {
+    .modern-search-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .modern-search-input {
+        min-width: 250px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .modern-clear-btn {
+        width: 120px;
+    }
+}
+
+.dark-theme .ui.table tbody tr {
+    background: #2d2d2d !important;
+}
+
+.dark-theme .ui.table tbody tr:hover {
+    background: #404040 !important;
+}
+
+.dark-theme .infoTable,
+.dark-theme .infoTable th,
+.dark-theme .infoTable td {
+    background: #2d2d2d;
+    color: #e0e0e0;
+    border: 1px solid #555555;
+}
+
+.dark-theme .recipesTable {
+    background: #2d2d2d;
+    color: #e0e0e0;
+}
+
+.dark-theme .ui.input input {
+    background: #3d3d3d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555555 !important;
+}
+
+.dark-theme .ui.input input:focus {
+    border-color: #66b3ff !important;
+}
+
+.dark-theme .ui.button {
+    background: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555555 !important;
+}
+
+.dark-theme .ui.button:hover {
+    background: #505050 !important;
+}
+
+.dark-theme .ui.dropdown {
+    background: #3d3d3d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555555 !important;
+}
+
+.dark-theme .ui.dropdown .menu {
+    background: #3d3d3d !important;
+    border: 1px solid #555555 !important;
+}
+
+.dark-theme .ui.dropdown .menu .item {
+    color: #e0e0e0 !important;
+}
+
+.dark-theme .ui.dropdown .menu .item:hover {
+    background: #505050 !important;
+}
+
+.dark-theme .theme-toggle-btn {
+    background: #ffc107 !important;
+    color: #000 !important;
+}
+
+.dark-theme .theme-toggle-btn:hover {
+    background: #e0a800 !important;
+}
+
+.dark-theme .nav-btn {
+    background: #495057 !important;
+    color: #ffffff !important;
+    border: 1px solid #6c757d;
+}
+
+.dark-theme .nav-btn:hover {
+    background: #6c757d !important;
+    color: #ffffff !important;
+}
+
+.dark-theme .nav-btn:visited {
+    color: #ffffff !important;
+}
+
+.dark-theme .nav-btn.version-btn {
+    background: #6f42c1 !important; /* Purple for "Switch to Original" */
+}
+
+.dark-theme .nav-btn.version-btn:hover {
+    background: #5a2d91 !important;
+}
+
+/* Dark mode styling for "Switch to Royal" button */
+.dark-theme .nav-btn[href="indexRoyal.html"] {
+    background: #dc3545 !important; /* Red for "Switch to Royal" */
+}
+
+.dark-theme .nav-btn[href="indexRoyal.html"]:hover {
+    background: #c82333 !important;
+}
+
+/* Override hover effects for dark mode */
+.dark-theme #list tr:hover td,
+.dark-theme #skillList tr:hover td {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-theme .ui.sortable.table thead th:hover {
+    background: #505050 !important;
+}
+
+/* Preserve resistance type colors in dark mode */
+.dark-theme .ui.table .wk, 
+.dark-theme .ui.table .Weak,
+.dark-theme .wk, 
+.dark-theme .Weak { 
+    color: #ff6b6b !important; /* Brighter red for dark backgrounds */
+}
+
+.dark-theme .ui.table .rs, 
+.dark-theme .ui.table .Resist,
+.dark-theme .rs, 
+.dark-theme .Resist { 
+    color: #4dabf7 !important; /* Brighter blue for dark backgrounds */
+}
+
+.dark-theme .ui.table .nu, 
+.dark-theme .ui.table .Null,
+.dark-theme .nu, 
+.dark-theme .Null { 
+    color: #ced4da !important; /* Lighter gray for dark backgrounds */
+}
+
+.dark-theme .ui.table .rp, 
+.dark-theme .ui.table .Repel,
+.dark-theme .rp, 
+.dark-theme .Repel { 
+    color: #ffd43b !important; /* Brighter yellow for dark backgrounds */
+}
+
+.dark-theme .ui.table .ab, 
+.dark-theme .ui.table .Absorb,
+.dark-theme .ab, 
+.dark-theme .Absorb { 
+    color: #51cf66 !important; /* Brighter green for dark backgrounds */
+}
+
+/* Preserve checkmark colors in dark mode */
+.dark-theme .ui.table .✓,
+.dark-theme .✓ { 
+    color: #51cf66 !important; /* Brighter green for dark backgrounds */
+}
+
+.dark-theme .ui.table .✘,
+.dark-theme .✘ { 
+    color: #ff6b6b !important; /* Brighter red for dark backgrounds */
+}
+
+/* Persona Page Badge Styling */
+.persona-level-badge {
+    background-color: #28a745;
+    display: inline-block;
+    padding: .3em .7em .35em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin-left: 8px;
+}
+
+.persona-arcana-badge {
+    background-color: #6f42c1;
+    display: inline-block;
+    padding: .3em .7em .35em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin-left: 5px;
+}
+
+/* Mementos Badge Styling for Persona Pages */
+.mementos-area-badge {
+    background-color: #6f42c1;
+    display: inline-block;
+    padding: .3em .7em .35em;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin-right: 8px;
+}
+
+.mementos-floor-badge {
+    background-color: #17a2b8;
+    display: inline-block;
+    padding: .25em .6em .3em;
+    font-size: 80%;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+/* Note Badge Styling */
+.note-badge {
+    display: inline-block;
+    padding: .3em .7em .35em;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.note-max {
+    background-color: #dc3545; /* Red for max social link requirement */
+}
+
+.note-rare {
+    background-color: #6f42c1; /* Purple for rare personas */
+}
+
+.note-info {
+    background-color: #17a2b8; /* Teal for general notes */
+}
+
+.note-dlc {
+    background-color: #fd7e14; /* Orange for DLC */
+}
+
+/* Dark mode badge styling */
+.dark-theme .persona-level-badge {
+    background-color: #20c997;
+}
+
+.dark-theme .persona-arcana-badge {
+    background-color: #8a63d2;
+}
+
+.dark-theme .mementos-area-badge {
+    background-color: #8a63d2;
+}
+
+.dark-theme .mementos-floor-badge {
+    background-color: #20c997;
+}
+
+.dark-theme .note-max {
+    background-color: #e74c3c;
+}
+
+.dark-theme .note-rare {
+    background-color: #8a63d2;
+}
+
+.dark-theme .note-info {
+    background-color: #20c997;
+}
+
+.dark-theme .note-dlc {
+    background-color: #f39c12;
+}
+
+/* Table Bottom Padding */
+.ui.table {
+    margin-bottom: 40px !important;
+}
+
+/* Additional spacing for tables at the end of content */
+.ui.table:last-child {
+    margin-bottom: 60px !important;
+}
+
+/* Mobile responsive bottom spacing */
+@media only screen and (max-width: 768px) {
+    .ui.table {
+        margin-bottom: 30px !important;
+    }
+    
+    .ui.table:last-child {
+        margin-bottom: 50px !important;
+    }
 }

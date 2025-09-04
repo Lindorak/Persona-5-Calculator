@@ -29,11 +29,11 @@ var itemMap = {
     },
     "Brain Shot": {
         "type": "Gun - Ann only",
-        "description" : "Atk 140 / Acc 84 / Rounds 12 / +Brainwash (med)"
+        "description": "Atk 140 / Acc 84 / Rounds 12 / +Brainwash (med)"
     },
     "Catnap": {
         "type": "Gun - Morgana only",
-        "description": "Atk 168 / Acc 90 / Rounds 5 / +Sleep (med)" 
+        "description": "Atk 168 / Acc 90 / Rounds 5 / +Sleep (med)"
     },
     "Claiomh Solais - Sable": {
         "type": "Weapon - Morgana only",
@@ -71,9 +71,6 @@ var itemMap = {
         "type": "Accessory",
         "description": "Ag +3 / +Null Brainwash"
     },
-    "Headbutt": {
-        "skillCard": true
-    },
     "Headhunter Ladle": {
         "type": "Weapon - Morgana only",
         "description": "Atk 128 / Acc 90 / +Critical rate up (low)"
@@ -106,9 +103,6 @@ var itemMap = {
         "type": "Accessory",
         "description": "All stats +2 / +Bless"
     },
-    "Kougaon": {
-        "skillCard": true
-    },
     "Kuzuryu Gouhou": {
         "type": "Gun - Yusuke only",
         "description": "Atk 300 / Acc 88 / Rounds 9 / +Random ailment (low)"
@@ -116,9 +110,6 @@ var itemMap = {
     "Legion's Jail": {
         "type": "Accessory",
         "description": "+Null Fear"
-    },
-    "Life Aid": {
-        "skillCard": true
     },
     "Lucifer Guard": {
         "type": "Protector - Unisex",

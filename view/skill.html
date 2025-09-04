@@ -1,8 +1,9 @@
 <p>
-    <div class="ui mini input">
-        <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
-        &nbsp;
-        <button ng:click="filterStr = ''" class="ui mini button">Clear</button>
+    <div class="modern-search-container">
+        <div class="search-input-wrapper">
+            <input type="text" size="30" ng-model="filterStr" placeholder="Search skills..." class="modern-search-input">
+        </div>
+        <button ng:click="filterStr = ''" class="modern-clear-btn">✖ Clear</button>
     </div>
 </p>
 

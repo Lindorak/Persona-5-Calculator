@@ -1,17 +1,19 @@
 <p ng:hide="fusionTo">"{{personaName}}" not found!</p>
 <div ng:show="fusionTo" style="margin-top:10px">
-    <h2>{{personaName}} ({{persona.level}} / {{persona.arcana}})</h2>
+    <h2>{{personaName}} <span class="persona-level-badge">Level {{persona.level}}</span> <span class="persona-arcana-badge">{{persona.arcana}}</span></h2>
 
     <div ng:if='persona.max || persona.rare || persona.note || persona.dlc'>
         <h3>Note</h3>
-        <span style='color: red;' ng:show='persona.max'>Social link must be maxed!</span>
-        <span style='color: slateblue;' ng:show='persona.rare'>This is a rare persona and cannot be fused!</span>
-        <span style='color: slateblue;' ng:show='persona.note'>{{persona.note}}</span>
-        <span style='color: slateblue;' ng:show='persona.dlc'>This is a DLC persona!</span>
+        <span class="note-badge note-max" ng:show='persona.max'>Social link must be maxed!</span>
+        <span class="note-badge note-rare" ng:show='persona.rare'>This is a rare persona and cannot be fused!</span>
+        <span class="note-badge note-info" ng:show='persona.note'>{{persona.note}}</span>
+        <span class="note-badge note-dlc" ng:show='persona.dlc'>This is a DLC persona!</span>
     </div>
     <br>
     <div ng-if="persona.area"><h3>Mementos Location:</h3>
-        Path of {{persona.area}}<br>Floor(s): {{persona.floor}}</div>
+        <span class="mementos-area-badge">{{persona.area}}</span>
+        <span class="mementos-floor-badge">{{persona.floor}}</span>
+    </div>
     
 
     <h3>Itemization</h3>
@@ -202,13 +204,11 @@
         </div>
     </div>
 
-    <div class="ui mini input">
-        <label>
-          Filter:
-          <input type="text" size="30" ng-model="fusionTo.filterStr" autocorrect="off" autocomplete="off" spellcheck="false">
-        </label>
-        &nbsp;
-        <button ng:click="fusionTo.filterStr = ''" class="ui mini button">Clear</button>
+    <div class="modern-search-container">
+        <div class="search-input-wrapper">
+            <input type="text" size="30" ng-model="fusionTo.filterStr" autocorrect="off" autocomplete="off" spellcheck="false" placeholder="Filter fusion recipes..." class="modern-search-input">
+        </div>
+        <button ng:click="fusionTo.filterStr = ''" class="modern-clear-btn">✖ Clear</button>
     </div>
 
     <table class="ui table unstackable striped recipesTable">
@@ -253,13 +253,11 @@
         </div>
     </div>
 
-    <div class="ui mini input">
-        <label>
-          Filter:
-          <input type="text" size="30" ng-model="fusionFrom.filterStr" autocorrect="off" autocomplete="off" spellcheck="false">
-        </label>
-        &nbsp;
-        <button ng:click="fusionFrom.filterStr = ''" class="ui mini button">Clear</button>
+    <div class="modern-search-container">
+        <div class="search-input-wrapper">
+            <input type="text" size="30" ng-model="fusionFrom.filterStr" autocorrect="off" autocomplete="off" spellcheck="false" placeholder="Filter fusion options..." class="modern-search-input">
+        </div>
+        <button ng:click="fusionFrom.filterStr = ''" class="modern-clear-btn">✖ Clear</button>
     </div>
 
     <table class="ui table unstackable striped recipesTable">

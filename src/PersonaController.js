@@ -59,9 +59,9 @@ var PersonaController = /** @class */ (function () {
         this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
         //item data
         var item = compediumEntry.item;
-        if(compediumEntry.skillCard) {
+        if (compediumEntry.skillCard) {
             this.$scope.persona.itemData = getSkillCardInfo(item);
-            if(compediumEntry.itemr) {
+            if (compediumEntry.itemr) {
                 var itemr = compediumEntry.itemr;
                 this.$scope.persona.itemDataR = getSkillCardInfo(itemr);
             }
@@ -69,7 +69,7 @@ var PersonaController = /** @class */ (function () {
         }
         else {
             this.$scope.persona.itemData = getItem(item);
-            if(compediumEntry.itemr) {
+            if (compediumEntry.itemr) {
                 var itemr = compediumEntry.itemr;
                 this.$scope.persona.itemDataR = getItem(itemr);
             }
@@ -89,18 +89,16 @@ var PersonaController = /** @class */ (function () {
         // Note: skillList are skills in a sorted list for displaying with Angular.
         // It's different from the existing skills property which is a map.
         this.$scope.persona.skillList = getSkills(personaName);
-
         //inheritance data
         var inheritanceHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse", "Healing", "Ailment"];
         this.$scope.persona.inheritanceHeader = inheritanceHeader;
-        this.$scope.persona.inheritanceHeader1 = inheritanceHeader.slice(0,6);
+        this.$scope.persona.inheritanceHeader1 = inheritanceHeader.slice(0, 6);
         this.$scope.persona.inheritanceHeader2 = inheritanceHeader.slice(6);
-
-        if(compediumEntry.inherits) {
+        if (compediumEntry.inherits) {
             var inheritanceType = compediumEntry.inherits;
             var inheritance = getInheritance(inheritanceType);
             this.$scope.persona.inheritance = inheritance;
-            this.$scope.persona.inheritance1 = inheritance.slice(0,6);
+            this.$scope.persona.inheritance1 = inheritance.slice(0, 6);
             this.$scope.persona.inheritance2 = inheritance.slice(6);
         }
     }

@@ -25,7 +25,7 @@ var personaMap = {
         "level": 3,
         "stats": [3, 4, 5, 7, 3],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
-        "skills": {"Baisudi": 0, "Dia": 0, "Dodge Elec": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0},
+        "skills": { "Baisudi": 0, "Dia": 0, "Dodge Elec": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0 },
         "personality": "Timid",
         "area": "Aiyatsbus",
         "floor": "L1"
@@ -57,7 +57,7 @@ var personaMap = {
         "level": 29,
         "stats": [15, 22, 19, 20, 18],
         "elems": ["-", "-", "ab", "-", "-", "-", "wk", "-", "-", "-"],
-        "skills": {"Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31},
+        "skills": { "Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31 },
         "area": "Chemdah",
         "floor": "L6 & 7"
     },
@@ -87,7 +87,7 @@ var personaMap = {
         "level": 10,
         "stats": [5, 9, 7, 10, 6],
         "elems": ["-", "wk", "wk", "rs", "-", "-", "-", "-", "-", "-"],
-        "skills": {"Apt Pupil": 13, "Bufu": 0, "Ice Break": 15, "Mabufu": 14, "Rakunda": 0, "Tarukaja": 11},
+        "skills": { "Apt Pupil": 13, "Bufu": 0, "Ice Break": 15, "Mabufu": 14, "Rakunda": 0, "Tarukaja": 11 },
         "personality": "Timid",
         "area": "Aiyatsbus",
         "floor": "L5 & 6"
@@ -100,7 +100,7 @@ var personaMap = {
         "level": 12,
         "stats": [7, 9, 9, 9, 9],
         "elems": ["-", "-", "-", "-", "rs", "-", "-", "-", "nu", "wk"],
-        "skills": {"Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curse": 15, "Hama": 0, "Kouha": 13},
+        "skills": { "Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curse": 15, "Hama": 0, "Kouha": 13 },
         "personality": "Irritable",
         "area": "Aiyatsbus / Kaitul",
         "floor": "L5 & 6 / L1-4"
@@ -134,7 +134,7 @@ var personaMap = {
         "level": 25,
         "stats": [14, 18, 15, 21, 14],
         "elems": ["-", "wk", "-", "-", "rs", "rp", "-", "wk", "-", "-"],
-        "skills": {"Assault Dive": 27, "Dekaja": 28, "Garula": 0, "Masukukaja": 0, "Null Forget": 29, "Wind Break": 0},
+        "skills": { "Assault Dive": 27, "Dekaja": 28, "Garula": 0, "Masukukaja": 0, "Null Forget": 29, "Wind Break": 0 },
         "personality": "Irritable",
         "area": "Akzeriyyuth",
         "floor": "L1-3, 5-7, 9-11"
@@ -147,7 +147,7 @@ var personaMap = {
         "level": 11,
         "stats": [7, 11, 6, 10, 6],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": {"Bufu": 0, "Elec Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16},
+        "skills": { "Bufu": 0, "Elec Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16 },
         "personality": "Upbeat",
         "area": "Chemdah",
         "floor": "L1-4"
@@ -160,7 +160,7 @@ var personaMap = {
         "level": 31,
         "stats": [20, 19, 20, 20, 21],
         "elems": ["rs", "-", "-", "wk", "-", "-", "-", "-", "-", "-"],
-        "skills": {"Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32}
+        "skills": { "Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32 }
     },
     "Arahabaki": {
         "inherits": "Ailment",
@@ -189,7 +189,7 @@ var personaMap = {
         "level": 16,
         "stats": [13, 10, 13, 12, 7],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "nu", "wk"],
-        "skills": {"Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psi": 0, "Rebellion": 18},
+        "skills": { "Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psi": 0, "Rebellion": 18 },
         "personality": "Irritable",
         "area": "Aiyatsbus",
         "floor": "L5 & 6"
@@ -258,7 +258,7 @@ var personaMap = {
         "level": 1,
         "stats": [2, 2, 2, 3, 1],
         "elems": ["-", "-", "-", "wk", "-", "-", "-", "-", "wk", "rs"],
-        "skills": {"Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4}
+        "skills": { "Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4 }
     },
     "Asterius": {
         "inherits": "Almighty",
@@ -454,7 +454,7 @@ var personaMap = {
         "level": 37,
         "stats": [25, 27, 24, 23, 19],
         "elems": ["-", "-", "wk", "rs", "rs", "-", "-", "rs", "-", "rp"],
-        "skills": {"Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Concentrate": 44, "Null Rage": 38},
+        "skills": { "Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Concentrate": 44, "Null Rage": 38 },
         "personality": "Irritable",
         "area": "Adyeshach",
         "floor": "L6-8, 10"
@@ -467,7 +467,7 @@ var personaMap = {
         "level": 9,
         "stats": [8, 6, 7, 8, 5],
         "elems": ["-", "nu", "rs", "wk", "-", "-", "-", "-", "-", "-"],
-        "skills": {"Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13},
+        "skills": { "Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13 },
         "personality": "Irritable",
         "area": "Aiyatsbus",
         "floor": "L5 & 6"
@@ -480,7 +480,7 @@ var personaMap = {
         "level": 4,
         "stats": [5, 3, 3, 5, 3],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "-", "rs"],
-        "skills": {"Apt Pupil": 8, "Garu": 6, "Ice Wall": 7, "Lunge": 0, "Tarunda": 0},
+        "skills": { "Apt Pupil": 8, "Garu": 6, "Ice Wall": 7, "Lunge": 0, "Tarunda": 0 },
         "personality": "Irritable",
         "area": "Aiyatsbus",
         "floor": "L1 & 2"
@@ -896,7 +896,7 @@ var personaMap = {
         "level": 22,
         "stats": [14, 15, 15, 18, 11],
         "elems": ["-", "-", "-", "rs", "wk", "nu", "-", "-", "-", "-"],
-        "skills": {"Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuke Boost": 27, "Recarm": 25}
+        "skills": { "Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuke Boost": 27, "Recarm": 25 }
     },
     "Flauros": {
         "inherits": "Ailment",
@@ -984,7 +984,7 @@ var personaMap = {
         "level": 23,
         "stats": [14, 17, 16, 15, 14],
         "elems": ["-", "-", "-", "-", "wk", "ab", "-", "-", "-", "-"],
-        "skills": {"Dodge Wind": 26, "Garula": 0, "Resist Psy": 27, "Tarukaja": 0, "Tetra Break": 0, "Wind Boost": 25},
+        "skills": { "Dodge Wind": 26, "Garula": 0, "Resist Psy": 27, "Tarukaja": 0, "Tetra Break": 0, "Wind Boost": 25 },
         "personality": "Unknown",
         "area": "Kaitul",
         "floor": "L8 & 9"
@@ -1058,7 +1058,7 @@ var personaMap = {
         "level": 7,
         "stats": [5, 6, 7, 6, 4],
         "elems": ["-", "-", "-", "nu", "wk", "-", "rs", "-", "-", "-"],
-        "skills": {"Bufu": 0, "Defense Master": 12, "Mabufu": 10, "Patra": 8, "Rakunda": 0, "Resist Forget": 11}
+        "skills": { "Bufu": 0, "Defense Master": 12, "Mabufu": 10, "Patra": 8, "Rakunda": 0, "Resist Forget": 11 }
     },
     "Girimehkala": {
         "inherits": "Ailment",
@@ -1068,7 +1068,7 @@ var personaMap = {
         "level": 44,
         "stats": [36, 24, 32, 32, 15],
         "elems": ["rp", "rp", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": {"Foul Breath": 46, "Marakunda": 0, "Mudoon": 0, "Repel Phys": 51, "Swift Strike": 0, "Wage War": 48},
+        "skills": { "Foul Breath": 46, "Marakunda": 0, "Mudoon": 0, "Repel Phys": 51, "Swift Strike": 0, "Wage War": 48 },
         "personality": "Gloomy",
         "area": "Adyeshach",
         "floor": "L4, 6-8, 10"
@@ -1156,7 +1156,7 @@ var personaMap = {
         "level": 16,
         "stats": [8, 14, 10, 13, 10],
         "elems": ["-", "wk", "-", "-", "rs", "rs", "-", "wk", "-", "-"],
-        "skills": {"Diarama": 18, "Dormina": 0, "Garu": 0, "Magaru": 20, "Media": 0, "Taunt": 19},
+        "skills": { "Diarama": 18, "Dormina": 0, "Garu": 0, "Magaru": 20, "Media": 0, "Taunt": 19 },
         "personality": "Irritable",
         "area": "Kaitul",
         "floor": "L1-3"
@@ -1207,7 +1207,7 @@ var personaMap = {
         "level": 9,
         "stats": [4, 10, 4, 8, 8],
         "elems": ["-", "wk", "rp", "wk", "-", "-", "-", "-", "-", "-"],
-        "skills": {"Agi": 0, "Burn Boost": 15, "Dormina": 0, "Maragi": 13, "Resist Forget": 12, "Tarunda": 11},
+        "skills": { "Agi": 0, "Burn Boost": 15, "Dormina": 0, "Maragi": 13, "Resist Forget": 12, "Tarunda": 11 },
         "personality": "Upbeat",
         "area": "Chemdah",
         "floor": "L1-3"
@@ -1220,7 +1220,7 @@ var personaMap = {
         "level": 5,
         "stats": [4, 6, 4, 5, 3],
         "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "wk", "-"],
-        "skills": {"Life Drain": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8},
+        "skills": { "Life Drain": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8 },
         "personality": "Timid",
         "area": "Aiyatsbus",
         "floor": "L2, 3 & 6"
@@ -1350,7 +1350,7 @@ var personaMap = {
         "level": 11,
         "stats": [8, 9, 7, 9, 7],
         "elems": ["-", "-", "wk", "nu", "-", "-", "-", "-", "-", "-"],
-        "skills": {"Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13},
+        "skills": { "Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13 },
         "personality": "Timid",
         "area": "Chemdah",
         "floor": "L4 & 6"
@@ -1362,7 +1362,7 @@ var personaMap = {
         "level": 2,
         "stats": [2, 3, 3, 3, 2],
         "elems": ["-", "wk", "ab", "wk", "-", "wk", "-", "-", "-", "-"],
-        "skills": {"Agi": 0, "Dazzler": 5, "Sharp Student": 4, "Rakunda": 0, "Resist Sleep": 7},
+        "skills": { "Agi": 0, "Dazzler": 5, "Sharp Student": 4, "Rakunda": 0, "Resist Sleep": 7 },
         "personality": "Gloomy",
         "area": "Qimranut / Aiyatsbus",
         "floor": "All / L1"
@@ -1486,7 +1486,7 @@ var personaMap = {
         "level": 6,
         "stats": [5, 5, 5, 6, 4],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": {"Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10},
+        "skills": { "Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10 },
         "personality": "Upbeat",
         "area": "Aiyatsbus",
         "floor": "L3"
@@ -1499,7 +1499,7 @@ var personaMap = {
         "level": 40,
         "stats": [22, 31, 24, 28, 22],
         "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "rs", "-"],
-        "skills": {"Divine Grace": 45, "Energy Drop": 0, "Lullaby": 0, "Marakukaja": 0, "Mediarama": 41, "Tetraja": 43},
+        "skills": { "Divine Grace": 45, "Energy Drop": 0, "Lullaby": 0, "Marakukaja": 0, "Mediarama": 41, "Tetraja": 43 },
         "personality": "Unknown",
         "area": "Sheriruth",
         "floor": "L3-5 (before Palace 7) / L2 & 3 (after Palace 7)"
@@ -1613,7 +1613,7 @@ var personaMap = {
         "level": 11,
         "stats": [7, 8, 8, 11, 6],
         "elems": ["-", "-", "-", "wk", "-", "rs", "-", "-", "wk", "-"],
-        "skills": {"Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15},
+        "skills": { "Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15 },
         "personality": "Upbeat",
         "area": "Chemdah",
         "floor": "L6 & 7"
@@ -1626,7 +1626,7 @@ var personaMap = {
         "level": 9,
         "stats": [5, 8, 6, 9, 6],
         "elems": ["-", "rs", "wk", "rs", "-", "rs", "-", "-", "-", "-"],
-        "skills": {"Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12},
+        "skills": { "Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12 },
         "personality": "Timid",
         "area": "Chemdah",
         "floor": "L2 & 3"
@@ -1678,7 +1678,7 @@ var personaMap = {
         "level": 56,
         "stats": [34, 38, 34, 42, 27],
         "elems": ["-", "-", "-", "wk", "-", "rp", "-", "-", "rs", "rs"],
-        "skills": {"Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0},
+        "skills": { "Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0 },
         "area": "Sheriruth",
         "floor": "L11 (after Palace 7)"
     },
@@ -1786,7 +1786,7 @@ var personaMap = {
         "level": 19,
         "stats": [9, 17, 12, 16, 10],
         "elems": ["-", "-", "wk", "-", "-", "rs", "rs", "-", "-", "-"],
-        "skills": {"Eiga": 23, "Mamudo": 21, "Mapsi": 22, "Marin Karin": 20, "Psio": 0, "Rakunda": 0},
+        "skills": { "Eiga": 23, "Mamudo": 21, "Mapsi": 22, "Marin Karin": 20, "Psio": 0, "Rakunda": 0 },
         "personality": "Irritable",
         "area": "Kaitul",
         "floor": "L3-5"
@@ -1798,7 +1798,7 @@ var personaMap = {
         "level": 38,
         "stats": [24, 24, 30, 23, 20],
         "elems": ["rs", "rs", "rs", "-", "-", "-", "rs", "-", "wk", "nu"],
-        "skills": {"Life Drain": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40},
+        "skills": { "Life Drain": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40 },
         "personality": "Unknown",
         "area": "Adyeshach",
         "floor": "L1-4"
@@ -1948,7 +1948,7 @@ var personaMap = {
         "level": 3,
         "stats": [2, 3, 3, 4, 4],
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "-", "-"],
-        "skills": {"Energy Drop": 0, "Lunge": 4, "Pulinpa": 0, "Skull Cracker": 7, "Sukunda": 5},
+        "skills": { "Energy Drop": 0, "Lunge": 4, "Pulinpa": 0, "Skull Cracker": 7, "Sukunda": 5 },
         "personality": "Upbeat",
         "area": "Qimranut / Aiyatsbus",
         "floor": "All / L1"
@@ -1979,7 +1979,7 @@ var personaMap = {
         "level": 19,
         "stats": [12, 13, 12, 16, 11],
         "elems": ["-", "-", "-", "-", "wk", "nu", "-", "-", "-", "-"],
-        "skills": {"Garula": 23, "Null Dizzy": 0, "Psi": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22}
+        "skills": { "Garula": 23, "Null Dizzy": 0, "Psi": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22 }
     },
     "Melchizedek": {
         "inherits": "Bless",
@@ -2311,7 +2311,7 @@ var personaMap = {
         "level": 20,
         "stats": [12, 14, 14, 15, 12],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "rs"],
-        "skills": {"Baisudi": 0, "Divine Grace": 22, "Makouha": 0, "Me Patra": 23, "Media": 0, "Rainy Play": 24}
+        "skills": { "Baisudi": 0, "Divine Grace": 22, "Makouha": 0, "Me Patra": 23, "Media": 0, "Rainy Play": 24 }
     },
     "Norn": {
         "inherits": "Almighty",
@@ -2362,7 +2362,7 @@ var personaMap = {
         "level": 8,
         "stats": [7, 3, 9, 8, 4],
         "elems": ["rs", "-", "-", "-", "wk", "-", "-", "-", "-", "-"],
-        "skills": {"Dekaja": 12, "Snap": 0, "Lucky Punch": 9, "Resist Fear": 10, "Sukunda": 0},
+        "skills": { "Dekaja": 12, "Snap": 0, "Lucky Punch": 9, "Resist Fear": 10, "Sukunda": 0 },
         "personality": "Unknown",
         "area": "Aiyatsbus",
         "floor": "L3, 5 & 6"
@@ -2452,7 +2452,7 @@ var personaMap = {
         "level": 19,
         "stats": [17, 8, 16, 13, 10],
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "-", "-"],
-        "skills": {"Memory Blow": 23, "Sharp Student": 22, "Counter": 0, "Snap": 0, "Giant Slice": 21, "Rampage": 0},
+        "skills": { "Memory Blow": 23, "Sharp Student": 22, "Counter": 0, "Snap": 0, "Giant Slice": 21, "Rampage": 0 },
         "personality": "Upbeat",
         "area": "Kaitul",
         "floor": "L3-5, 8, 9"
@@ -2465,7 +2465,7 @@ var personaMap = {
         "level": 12,
         "stats": [9, 12, 7, 10, 5],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": {"Agi": 13, "Ice Wall": 0, "Mudo": 0, "Confuse Boost": 15, "Pulinpa": 14, "Resist Fear": 17},
+        "skills": { "Agi": 13, "Ice Wall": 0, "Mudo": 0, "Confuse Boost": 15, "Pulinpa": 14, "Resist Fear": 17 },
         "personality": "Gloomy",
         "area": "Chemdah",
         "floor": "L3 & 4"
@@ -2498,7 +2498,7 @@ var personaMap = {
         "level": 17,
         "stats": [11, 14, 15, 12, 6],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rs"],
-        "skills": {"Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0},
+        "skills": { "Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0 },
         "personality": "Timid",
         "area": "Kaitul",
         "floor": "L1-3"
@@ -2548,7 +2548,7 @@ var personaMap = {
         "level": 21,
         "stats": [16, 14, 14, 19, 7],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
-        "skills": {"Agilao": 0, "Burn Boost": 22, "Dodge Ice": 0, "Double Fangs": 0, "Matarukaja": 26, "Rat Fang": 24},
+        "skills": { "Agilao": 0, "Burn Boost": 22, "Dodge Ice": 0, "Double Fangs": 0, "Matarukaja": 26, "Rat Fang": 24 },
         "personality": "Irritable",
         "area": "Kaitul",
         "floor": "L4, 5, 7-9"
@@ -2561,7 +2561,7 @@ var personaMap = {
         "level": 42,
         "stats": [32, 24, 25, 31, 21],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": {"Counterstrike": 0, "Heat Wave": 47, "Matarukaja": 45, "Oni Kagura": 0, "Tempest Slash": 43},
+        "skills": { "Counterstrike": 0, "Heat Wave": 47, "Matarukaja": 45, "Oni Kagura": 0, "Tempest Slash": 43 },
         "personality": "Unknown",
         "area": "Sheriruth",
         "floor": "L1-5, 9 (before Palace 7) / L1-4 (after Palace 7)"
@@ -2651,7 +2651,7 @@ var personaMap = {
         "level": 2,
         "stats": [1, 3, 3, 4, 2],
         "elems": ["-", "wk", "-", "wk", "rs", "-", "-", "-", "rs", "wk"],
-        "skills": {"Dia": 0, "Patra": 3, "Resist Confuse": 6, "Tarukaja": 5, "Zio": 0},
+        "skills": { "Dia": 0, "Patra": 3, "Resist Confuse": 6, "Tarukaja": 5, "Zio": 0 },
         "personality": "Timid",
         "area": "Qimranut / Aiyatsbus",
         "floor": "All / L1 & 3"
@@ -2685,7 +2685,7 @@ var personaMap = {
         "level": 29,
         "stats": [17, 19, 18, 21, 19],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "nu", "wk"],
-        "skills": {"Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0}
+        "skills": { "Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0 }
     },
     "Queen Mab": {
         "inherits": "Almighty",
@@ -2694,7 +2694,7 @@ var personaMap = {
         "level": 43,
         "stats": [23, 35, 26, 30, 22],
         "elems": ["-", "-", "nu", "-", "rs", "wk", "-", "-", "-", "-"],
-        "skills": {"Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0},
+        "skills": { "Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0 },
         "personality": "Unknown",
         "area": "Sheriruth",
         "floor": "L5, 7-9 (before Palace 7) / L3 & 4 (after Palace 7)"
@@ -2764,7 +2764,7 @@ var personaMap = {
         "level": 48,
         "stats": [28, 34, 30, 33, 26],
         "elems": ["rp", "rp", "nu", "-", "wk", "-", "-", "-", "wk", "nu"],
-        "skills": {"Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53, "Swift Strike": 0},
+        "skills": { "Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53, "Swift Strike": 0 },
         "personality": "Unknown",
         "area": "Sheriruth",
         "floor": "L11-13 (before Palace 7) / L5 (after Palace 7)"
@@ -2833,7 +2833,7 @@ var personaMap = {
         "level": 6,
         "stats": [4, 6, 5, 6, 4],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": {"Bufu": 0, "Energy Drop": 0, "Growth 1": 7, "Rakukaja": 8, "Resist Dizzy": 10, "Wind Wall": 0}
+        "skills": { "Bufu": 0, "Energy Drop": 0, "Growth 1": 7, "Rakukaja": 8, "Resist Dizzy": 10, "Wind Wall": 0 }
     },
     "Sandalphon": {
         "inherits": "Bless",
@@ -3033,7 +3033,7 @@ var personaMap = {
         "level": 21,
         "stats": [16, 14, 15, 14, 11],
         "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
-        "skills": {"Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0},
+        "skills": { "Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0 },
         "personality": "Irritable",
         "area": "Chemdah",
         "floor": "L6 & 7"
@@ -3080,7 +3080,7 @@ var personaMap = {
         "level": 6,
         "stats": [4, 7, 4, 5, 5],
         "elems": ["-", "-", "wk", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": {"Bufu": 0, "Sharp Student": 10, "Dia": 7, "Dormina": 0, "Patra": 9},
+        "skills": { "Bufu": 0, "Sharp Student": 10, "Dia": 7, "Dormina": 0, "Patra": 9 },
         "personality": "Gloomy",
         "area": "Aiyatsbus",
         "floor": "L2, 3, 5 & 6"
@@ -3112,7 +3112,7 @@ var personaMap = {
         "level": 10,
         "stats": [9, 6, 11, 6, 5],
         "elems": ["rs", "-", "wk", "-", "-", "wk", "-", "-", "-", "-"],
-        "skills": {"Evil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0},
+        "skills": { "Evil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0 },
         "personality": "Timid",
         "area": "Qimranut / Aiyatsbus",
         "floor": "All / L1, 2, 3, 6"
@@ -3142,7 +3142,7 @@ var personaMap = {
         "level": 20,
         "stats": [20, 20, 20, 20, 20],
         "elems": ["nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "wk"],
-        "skills": {"Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psio": 0, "Zionga": 0},
+        "skills": { "Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psio": 0, "Zionga": 0 },
         "rare": true,
         "area": "Akzeriyyuth",
         "floor": "L1-3, 5-7, 9-11"
@@ -3154,7 +3154,7 @@ var personaMap = {
         "level": 7,
         "stats": [4, 7, 5, 8, 4],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": {"Agi": 8, "Brainwash Boost": 11, "Dekaja": 10, "Marin Karin": 0, "Mudo": 12, "Rebellion": 0},
+        "skills": { "Agi": 8, "Brainwash Boost": 11, "Dekaja": 10, "Marin Karin": 0, "Mudo": 12, "Rebellion": 0 },
         "personality": "Irritable",
         "area": "Aiyatsbus",
         "floor": "L5 & 6"

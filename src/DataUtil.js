@@ -192,8 +192,7 @@ function getSkillCardInfo(skillCard) {
         description: skill.effect,
         elem: capitalizeFirstLetter(skill.element),
         cost: getSkillCost(skill)
-    })
-
+    });
     return skillData;
 }
 function getItem(itemName) {
@@ -203,13 +202,12 @@ function getItem(itemName) {
         name: itemName,
         type: item.type,
         description: item.description
-    })
+    });
     return itemData;
 }
 function getInheritance(inheritanceType) {
     return inheritanceChart[inheritanceType];
 }
-
 function getSkillPersonaList(skill) {
     var arr = [];
     for (var key in skill.personas) {

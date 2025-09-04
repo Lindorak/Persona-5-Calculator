@@ -8,6 +8,6 @@
     "typescript": "3.1.6"
   },
   "scripts": {
-    "compile": "./node_modules/.bin/tsc"
+    "compile": "tsc"
   }
 }

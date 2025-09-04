@@ -50,11 +50,10 @@ var itemMapRoyal = {
     "Black Moon": {
         "type": "Accessory",
         "description": "+Critical rate up (high)"
-        
     },
     "Black Moon R": {
         "type": "Accessory",
-        "description": "+Apt Pupil (Increases Critical rate) / St +8" 
+        "description": "+Apt Pupil (Increases Critical rate) / St +8"
     },
     "Black Wing Robe": {
         "type": "Protector - Unisex",
@@ -86,7 +85,7 @@ var itemMapRoyal = {
     },
     "Brain Shot": {
         "type": "Gun - Ann only",
-        "description" : "Atk 140 / Acc 84 / Rounds 12 / +Brainwash (med)"
+        "description": "Atk 140 / Acc 84 / Rounds 12 / +Brainwash (med)"
     },
     "Brave Belt": {
         "type": "Accessory",
@@ -98,11 +97,11 @@ var itemMapRoyal = {
     },
     "Cat Buster": {
         "type": "Gun - Morgana only",
-        "description": "Atk 170 / Acc 90 / Rounds 5 / +Sleep (med)" 
+        "description": "Atk 170 / Acc 90 / Rounds 5 / +Sleep (med)"
     },
     "Catnap": {
         "type": "Gun - Morgana only",
-        "description": "Atk 150 / Acc 90 / Rounds 5 / +Sleep (med)" 
+        "description": "Atk 150 / Acc 90 / Rounds 5 / +Sleep (med)"
     },
     "Claiomh Solais": {
         "type": "Weapon - Morgana only",
@@ -219,7 +218,6 @@ var itemMapRoyal = {
     "Fleurs du Mal": {
         "type": "Weapon - Haru only",
         "description": "Atk 325 / Acc 86 / Ma +5 / +Dizzy (high)"
-        
     },
     "Fleurs du Mal R": {
         "type": "Weapon - Haru only",

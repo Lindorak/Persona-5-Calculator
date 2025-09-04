@@ -214,7 +214,7 @@ describe('Data', function () {
         expect(checkSkillPersona()).to.equal(true);
     });
     it("all items associated with each persona should be found in ItemData if it is not a skill card " +
-        "and all skill cards should have data in SkillData", () => {
+        "and all skill cards should have data in SkillData", function () {
         expect(checkItemization()).to.equal(true);
     });
 });

@@ -51,17 +51,49 @@
 
 </head>
 <body>
-    <a href="https://github.com/chinhodado/persona5_calculator" class="mobile-hidden">
-        <img style="position: absolute; top: 0; right: 0; border: 0;"
-             src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
-             alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
-    </a>
     <div id="content">
-        <h3><a href="index.html">Persona 5 Fusion Calculator</a></h3>
-        <h4 style="background-color: bisque;">Click <a href="indexRoyal.html">here</a> for the Royal version</h4>
-        <div class="desktop-hidden" style="margin-bottom:10px"><b><a href="https://github.com/chinhodado/persona5_calculator">View code on GitHub</a></b></div>
-        <b><a href="#/list/">Persona</a></b> - <b><a href="#/skill/">Skills</a></b> - <b><a href="#/setting/">Settings</a></b>
+        <div class="main-title">
+            <h1><a href="index.html" class="title-link">Persona 5 Fusion Calculator</a></h1>
+        </div>
+        <div class="nav-buttons">
+            <a href="#/list/" class="nav-btn">Persona</a>
+            <a href="#/skill/" class="nav-btn">Skills</a>
+            <a href="#/setting/" class="nav-btn">Settings</a>
+            <button id="theme-toggle" class="nav-btn theme-toggle-btn">Dark Mode</button>
+        </div>
+        <div class="version-nav">
+            <a href="indexRoyal.html" class="nav-btn version-btn">Switch to Persona 5 Royal</a>
+        </div>
         <ng-view ng-app="myModule"></ng-view>
     </div>
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to dark mode
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        body.classList.add(currentTheme + '-theme');
+        
+        if (currentTheme === 'dark') {
+            themeToggle.textContent = 'Light Mode';
+        } else {
+            themeToggle.textContent = 'Dark Mode';
+        }
+        
+        themeToggle.addEventListener('click', function() {
+            if (body.classList.contains('light-theme')) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                themeToggle.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                themeToggle.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 </body>
 </html>
