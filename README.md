@@ -1,9 +1,9 @@
 [![Build Status](https://github.com/chinhodado/persona5_calculator/workflows/build/badge.svg)](https://github.com/chinhodado/persona5_calculator/actions?workflow=build)
 
 
-### Persona 5 fusion calculator
+### Persona 5 Fusion Calculator
 
-A tool to help calculate fusions in Persona 5.
+A tool to help calculate fusions in Persona 5 and Persona 5 Royal.
 
 Link: https://chinhodado.github.io/persona5_calculator/
 
@@ -44,6 +44,46 @@ Ideas, logics, data, etc. have been gathered from:
  - https://github.com/arantius/persona-fusion-calculator
  - https://github.com/Heimdall409/persona4-fusion-calculator
  - https://github.com/aqiu384/aqiu384.github.io/tree/master/p5-tool
+
+## Recent UI/UX Improvements
+
+This calculator has been enhanced with several modern UI/UX improvements for better usability and visual appeal:
+
+### Dark Mode & Theme Support
+- **Dark mode by default** with toggle functionality
+- Persistent theme preference using localStorage
+- Enhanced color schemes for better contrast and readability
+- Improved resistance type colors for dark backgrounds
+
+### Modern Navigation
+- **Pill-shaped navigation buttons** with hover effects and smooth transitions
+- Unified button styling across all pages
+- Color-coded version switcher (Purple for Original, Red for Royal)
+- Responsive design for mobile devices
+- Removed GitHub branding for cleaner interface
+
+### Enhanced Search Experience
+- **Modern search bar** with rounded corners and focus effects
+- Stylized clear button with gradient background
+- Improved placeholder text and visual feedback
+- Mobile-optimized input sizing
+
+### Badge-Style Information Display
+- **Mementos Location badges** in list view (area and floor indicators)
+- **Persona page badges** for level, arcana, and special notes
+- Color-coded note badges (red for requirements, purple for rare, teal for info, orange for DLC)
+- Consistent badge styling across all pages
+
+### Visual Polish
+- **Gradient text styling** for main titles
+- Proper spacing after tables to prevent edge-touching
+- Enhanced typography and color coordination
+- Responsive design improvements for mobile devices
+
+### Technical Improvements
+- Fixed TypeScript compilation script for cross-platform compatibility
+- Modernized CSS with better organization and maintainability
+- Improved accessibility and user experience
 
 ## Building and Running Locally
 
