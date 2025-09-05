@@ -1,8 +1,6 @@
 name = "persona5-calculator"
 compatibility_date = "2023-10-30"
 
-[build]
-command = "npm run compile"
-
 [site]
 bucket = "./"
+entry-point = "workers-site"
