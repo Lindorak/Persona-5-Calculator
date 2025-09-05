@@ -38,6 +38,14 @@ a:visited {
     border-width: 0;
 }
 
+#list tbody tr {
+    height: 100px;
+}
+
+#list tbody td {
+    vertical-align: middle;
+}
+
 #list tr:hover td {
     background: rgba(64, 46, 24, 0.1);
 }
@@ -463,8 +471,8 @@ a[href="indexRoyal.html"].title-link:visited {
 
 .dlc-label {
     background-color: #f0ad4e;
-    display: inline;
-    padding: .2em .6em .3em;
+    display: inline-block;
+    padding: .6em .8em .6em;
     font-size: 75%;
     font-weight: 700;
     line-height: 1;
@@ -472,8 +480,48 @@ a[href="indexRoyal.html"].title-link:visited {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(0 10%, calc(100% - 6px) 0, 100% 90%, 4px 100%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
     margin-left: 5px;
+}
+
+.dlc-label::before,
+.dlc-label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.dlc-label::before {
+    background: #FF0000;
+    clip-path: polygon(0 15%, calc(100% - 4px) 0, 100% 95%, 6px 100%);
+    transform: scale(1.03) translateX(-0.4px) translateY(-0.2px);
+    z-index: -2;
+}
+
+.dlc-label::after {
+    background: #00FFFF;
+    clip-path: polygon(0 5%, calc(100% - 8px) 0, 100% 85%, 2px 100%);
+    transform: scale(1.02) translateX(0.4px) translateY(0.2px);
+    z-index: -1;
+}
+
+.dlc-label:hover::before {
+    opacity: 0.5;
+    transform: scale(1.05) translateX(-0.8px) translateY(-0.4px);
+}
+
+.dlc-label:hover::after {
+    opacity: 0.6;
+    transform: scale(1.03) translateX(0.8px) translateY(0.4px);
 }
 
 /* Mementos Location Styling */
@@ -487,7 +535,7 @@ a[href="indexRoyal.html"].title-link:visited {
 .area-label {
     background-color: #6f42c1;
     display: inline-block;
-    padding: .2em .6em .3em;
+    padding: .9em 1em .6em;
     font-size: 75%;
     font-weight: 700;
     line-height: 1;
@@ -495,13 +543,53 @@ a[href="indexRoyal.html"].title-link:visited {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(0 5%, calc(100% - 15px) 0, 100% 95%, 8px 100%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
+}
+
+.area-label::before,
+.area-label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.area-label::before {
+    background: #FF0000;
+    clip-path: polygon(0 10%, calc(100% - 17px) 0, 100% 100%, 10px 100%);
+    transform: scale(1.05) translateX(-1px) translateY(-0.5px);
+    z-index: -2;
+}
+
+.area-label::after {
+    background: #00FFFF;
+    clip-path: polygon(0 0%, calc(100% - 13px) 0, 100% 90%, 6px 100%);
+    transform: scale(1.03) translateX(1px) translateY(0.5px);
+    z-index: -1;
+}
+
+.area-label:hover::before {
+    opacity: 0.6;
+    transform: scale(1.08) translateX(-2px) translateY(-1px);
+}
+
+.area-label:hover::after {
+    opacity: 0.7;
+    transform: scale(1.05) translateX(2px) translateY(1px);
 }
 
 .floor-label {
     background-color: #17a2b8;
     display: inline-block;
-    padding: .15em .5em .2em;
+    padding: 1.0em .9em 1.0em;
     font-size: 70%;
     font-weight: 600;
     line-height: 1;
@@ -509,7 +597,47 @@ a[href="indexRoyal.html"].title-link:visited {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(4px 0, 100% 30%, calc(100% - 8px) 100%, 0 70%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
+}
+
+.floor-label::before,
+.floor-label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.floor-label::before {
+    background: #FF0000;
+    clip-path: polygon(6px 0, 100% 35%, calc(100% - 6px) 100%, 0 75%);
+    transform: scale(1.04) translateX(-0.5px) translateY(-0.3px);
+    z-index: -2;
+}
+
+.floor-label::after {
+    background: #00FFFF;
+    clip-path: polygon(2px 0, 100% 25%, calc(100% - 10px) 100%, 0 65%);
+    transform: scale(1.02) translateX(0.5px) translateY(0.3px);
+    z-index: -1;
+}
+
+.floor-label:hover::before {
+    opacity: 0.5;
+    transform: scale(1.06) translateX(-1px) translateY(-0.5px);
+}
+
+.floor-label:hover::after {
+    opacity: 0.6;
+    transform: scale(1.04) translateX(1px) translateY(0.5px);
 }
 
 .no-location {
@@ -1165,7 +1293,7 @@ span.theme-toggle-btn,
 .persona-level-badge {
     background-color: #28a745;
     display: inline-block;
-    padding: .3em .7em .35em;
+    padding: .7em 1em .7em;
     font-size: 75%;
     font-weight: 700;
     line-height: 1;
@@ -1173,14 +1301,54 @@ span.theme-toggle-btn,
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(0 0, calc(100% - 4px) 25%, calc(100% - 6px) 75%, 2px 100%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
     margin-left: 8px;
+}
+
+.persona-level-badge::before,
+.persona-level-badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.persona-level-badge::before {
+    background: #FF0000;
+    clip-path: polygon(0 0, calc(100% - 6px) 30%, calc(100% - 2px) 80%, 6px 100%);
+    transform: scale(1.04) translateX(-0.5px) translateY(-0.3px);
+    z-index: -2;
+}
+
+.persona-level-badge::after {
+    background: #00FFFF;
+    clip-path: polygon(0 0, calc(100% - 2px) 20%, calc(100% - 8px) 70%, 4px 100%);
+    transform: scale(1.02) translateX(0.5px) translateY(0.3px);
+    z-index: -1;
+}
+
+.persona-level-badge:hover::before {
+    opacity: 0.5;
+    transform: scale(1.06) translateX(-1px) translateY(-0.5px);
+}
+
+.persona-level-badge:hover::after {
+    opacity: 0.6;
+    transform: scale(1.04) translateX(1px) translateY(0.5px);
 }
 
 .persona-arcana-badge {
     background-color: #6f42c1;
     display: inline-block;
-    padding: .3em .7em .35em;
+    padding: .7em 1em .7em;
     font-size: 75%;
     font-weight: 700;
     line-height: 1;
@@ -1188,15 +1356,55 @@ span.theme-toggle-btn,
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(8px 0, 100% 25%, calc(100% - 4px) 75%, 0 100%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
     margin-left: 5px;
+}
+
+.persona-arcana-badge::before,
+.persona-arcana-badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.persona-arcana-badge::before {
+    background: #FF0000;
+    clip-path: polygon(10px 0, 100% 30%, calc(100% - 2px) 80%, 0 100%);
+    transform: scale(1.04) translateX(-0.5px) translateY(-0.3px);
+    z-index: -2;
+}
+
+.persona-arcana-badge::after {
+    background: #00FFFF;
+    clip-path: polygon(6px 0, 100% 20%, calc(100% - 6px) 70%, 0 100%);
+    transform: scale(1.02) translateX(0.5px) translateY(0.3px);
+    z-index: -1;
+}
+
+.persona-arcana-badge:hover::before {
+    opacity: 0.6;
+    transform: scale(1.06) translateX(-1px) translateY(-0.5px);
+}
+
+.persona-arcana-badge:hover::after {
+    opacity: 0.7;
+    transform: scale(1.04) translateX(1px) translateY(0.5px);
 }
 
 /* Mementos Badge Styling for Persona Pages */
 .mementos-area-badge {
     background-color: #6f42c1;
     display: inline-block;
-    padding: .3em .7em .35em;
+    padding: .7em 1.1em .7em;
     font-size: 85%;
     font-weight: 700;
     line-height: 1;
@@ -1204,14 +1412,54 @@ span.theme-toggle-btn,
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(0 5%, calc(100% - 15px) 0, 100% 95%, 8px 100%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
     margin-right: 8px;
+}
+
+.mementos-area-badge::before,
+.mementos-area-badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.mementos-area-badge::before {
+    background: #FF0000;
+    clip-path: polygon(0 10%, calc(100% - 17px) 0, 100% 100%, 10px 100%);
+    transform: scale(1.05) translateX(-1px) translateY(-0.5px);
+    z-index: -2;
+}
+
+.mementos-area-badge::after {
+    background: #00FFFF;
+    clip-path: polygon(0 0%, calc(100% - 13px) 0, 100% 90%, 6px 100%);
+    transform: scale(1.03) translateX(1px) translateY(0.5px);
+    z-index: -1;
+}
+
+.mementos-area-badge:hover::before {
+    opacity: 0.6;
+    transform: scale(1.08) translateX(-2px) translateY(-1px);
+}
+
+.mementos-area-badge:hover::after {
+    opacity: 0.7;
+    transform: scale(1.05) translateX(2px) translateY(1px);
 }
 
 .mementos-floor-badge {
     background-color: #17a2b8;
     display: inline-block;
-    padding: .25em .6em .3em;
+    padding: 1.2em .9em 1.2em;
     font-size: 80%;
     font-weight: 600;
     line-height: 1;
@@ -1219,13 +1467,53 @@ span.theme-toggle-btn,
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(4px 0, 100% 30%, calc(100% - 8px) 100%, 0 70%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
+}
+
+.mementos-floor-badge::before,
+.mementos-floor-badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.mementos-floor-badge::before {
+    background: #FF0000;
+    clip-path: polygon(6px 0, 100% 35%, calc(100% - 6px) 100%, 0 75%);
+    transform: scale(1.04) translateX(-0.5px) translateY(-0.3px);
+    z-index: -2;
+}
+
+.mementos-floor-badge::after {
+    background: #00FFFF;
+    clip-path: polygon(2px 0, 100% 25%, calc(100% - 10px) 100%, 0 65%);
+    transform: scale(1.02) translateX(0.5px) translateY(0.3px);
+    z-index: -1;
+}
+
+.mementos-floor-badge:hover::before {
+    opacity: 0.5;
+    transform: scale(1.06) translateX(-1px) translateY(-0.5px);
+}
+
+.mementos-floor-badge:hover::after {
+    opacity: 0.6;
+    transform: scale(1.04) translateX(1px) translateY(0.5px);
 }
 
 /* Note Badge Styling */
 .note-badge {
     display: inline-block;
-    padding: .3em .7em .35em;
+    padding: .7em 1em .7em;
     font-size: 85%;
     font-weight: 700;
     line-height: 1;
@@ -1233,9 +1521,49 @@ span.theme-toggle-btn,
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    clip-path: polygon(6px 0, calc(100% - 2px) 20%, calc(100% - 8px) 80%, 0 100%);
+    position: relative;
+    isolation: isolate;
+    transition: all 0.3s ease;
     margin-right: 8px;
     margin-bottom: 5px;
+}
+
+.note-badge::before,
+.note-badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.note-badge::before {
+    background: #FF0000;
+    clip-path: polygon(8px 0, calc(100% - 0px) 25%, calc(100% - 6px) 85%, 0 100%);
+    transform: scale(1.03) translateX(-0.4px) translateY(-0.2px);
+    z-index: -2;
+}
+
+.note-badge::after {
+    background: #00FFFF;
+    clip-path: polygon(4px 0, calc(100% - 4px) 15%, calc(100% - 10px) 75%, 0 100%);
+    transform: scale(1.02) translateX(0.4px) translateY(0.2px);
+    z-index: -1;
+}
+
+.note-badge:hover::before {
+    opacity: 0.5;
+    transform: scale(1.05) translateX(-0.8px) translateY(-0.4px);
+}
+
+.note-badge:hover::after {
+    opacity: 0.6;
+    transform: scale(1.03) translateX(0.8px) translateY(0.4px);
 }
 
 .note-max {
