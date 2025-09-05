@@ -828,6 +828,10 @@ span.theme-toggle-btn,
     font-size: 1.5em;
 }
 
+.modern-search-container .p5-link-wrapper.modern-clear-btn .shape-wrapper {
+    top: -5px;
+}
+
 .modern-search-input {
     background: #ffffff;
     border: 2px solid #e9ecef;
