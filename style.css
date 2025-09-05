@@ -1571,7 +1571,7 @@ span.theme-toggle-btn,
 }
 
 .note-rare {
-    background-color: #6f42c1; /* Purple for rare personas */
+    background-color: #f0ad4e; /* Yellow for rare personas - matches Unique badge */
 }
 
 .note-info {
@@ -1604,7 +1604,7 @@ span.theme-toggle-btn,
 }
 
 .dark-theme .note-rare {
-    background-color: #8a63d2;
+    background-color: #f0ad4e; /* Yellow for rare personas - matches Unique badge */
 }
 
 .dark-theme .note-info {
