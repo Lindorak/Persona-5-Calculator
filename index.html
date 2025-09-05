@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </a>
-            <button id="theme-toggle" class="p5-link-wrapper theme-toggle-btn">
+            <span id="theme-toggle" class="p5-link-wrapper theme-toggle-btn">
                 <span class="fallback">Dark Mode</span>
                 <div class="shape-wrapper">
                     <div class="shape red-fill jelly">
@@ -146,7 +146,7 @@
                         </svg>
                     </div>
                 </div>
-            </button>
+            </span>
         </div>
         <ng-view ng-app="myModule"></ng-view>
     </div>
@@ -166,7 +166,9 @@
             themeToggleFallback.textContent = 'Dark Mode';
         }
         
-        themeToggle.addEventListener('click', function() {
+        themeToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             if (body.classList.contains('light-theme')) {
                 body.classList.remove('light-theme');
                 body.classList.add('dark-theme');
@@ -178,6 +180,16 @@
                 themeToggleFallback.textContent = 'Dark Mode';
                 localStorage.setItem('theme', 'light');
             }
+        });
+        
+        // Prevent any selection or highlighting
+        themeToggle.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        themeToggle.addEventListener('mousedown', function(e) {
+            e.preventDefault();
         });
     </script>
 </body>
