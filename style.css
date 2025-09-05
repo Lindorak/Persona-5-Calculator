@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Expose-Regular', 'Open Sans', sans-serif;
     font-size: 13px;
     text-align: center;
     margin-top: 0;
@@ -836,7 +836,7 @@ span.theme-toggle-btn,
     border-radius: 25px;
     padding: 12px 20px;
     font-size: 14px;
-    font-family: inherit;
+    font-family: 'Expose-Regular', 'Open Sans', sans-serif;
     color: #495057;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
