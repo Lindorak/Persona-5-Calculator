@@ -1,3 +1,9 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 @font-face {
     font-family: 'Expose-Regular';
     src: url('fonts/Expose-Regular.otf') format('opentype');
@@ -626,15 +632,14 @@ span.theme-toggle-btn,
     font-family: inherit !important;
     cursor: pointer !important;
     margin: 0px 16px;
-    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
     display: inline-block;
     -webkit-tap-highlight-color: transparent !important;
     -webkit-focus-ring-color: transparent !important;
     -webkit-highlight: none !important;
-    -moz-user-focus: none !important;
     pointer-events: auto;
 }
 
@@ -642,10 +647,10 @@ span.theme-toggle-btn,
 .theme-toggle-btn *,
 .theme-toggle-btn *:before,
 .theme-toggle-btn *:after {
-    user-select: none !important;
     -webkit-user-select: none !important;
     -moz-user-select: none !important;
     -ms-user-select: none !important;
+    user-select: none !important;
     -webkit-tap-highlight-color: transparent !important;
     -webkit-highlight: none !important;
     outline: none !important;

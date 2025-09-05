@@ -206,7 +206,7 @@
 
     <div class="modern-search-container">
         <div class="search-input-wrapper">
-            <input type="text" size="30" ng-model="fusionTo.filterStr" autocorrect="off" autocomplete="off" spellcheck="false" placeholder="Filter fusion recipes..." class="modern-search-input">
+            <input type="text" id="fusion-to-search" name="fusion-to-search" size="30" ng-model="fusionTo.filterStr" autocorrect="off" autocomplete="off" spellcheck="false" placeholder="Filter fusion recipes..." class="modern-search-input">
         </div>
         <button ng:click="fusionTo.filterStr = ''" class="modern-clear-btn">✖ Clear</button>
     </div>
@@ -255,7 +255,7 @@
 
     <div class="modern-search-container">
         <div class="search-input-wrapper">
-            <input type="text" size="30" ng-model="fusionFrom.filterStr" autocorrect="off" autocomplete="off" spellcheck="false" placeholder="Filter fusion options..." class="modern-search-input">
+            <input type="text" id="fusion-from-search" name="fusion-from-search" size="30" ng-model="fusionFrom.filterStr" autocorrect="off" autocomplete="off" spellcheck="false" placeholder="Filter fusion options..." class="modern-search-input">
         </div>
         <button ng:click="fusionFrom.filterStr = ''" class="modern-clear-btn">✖ Clear</button>
     </div>
