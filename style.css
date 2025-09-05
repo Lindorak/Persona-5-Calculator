@@ -1,11 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin);
 
+@font-face {
+    font-family: 'Expose-Regular';
+    src: url('fonts/Expose-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     text-align: center;
     margin-top: 0;
     margin-right: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -138,6 +146,216 @@ a[href="indexRoyal.html"].title-link:visited {
 @media only screen and (max-width: 768px) {
     .main-title h1 {
         font-size: 1.8rem;
+    }
+}
+
+/* Persona 5 Navigation Styles */
+.p5-title {
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.p5-title h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.p5-title .title-link {
+    font-family: 'Expose-Regular', sans-serif;
+    color: #ffffff !important;
+    text-shadow: none !important;
+    text-decoration: none !important;
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    transform-origin: center;
+    background: none !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.p5-title .title-link .shape-wrapper { 
+    display: none; 
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.p5-title .title-link:hover {
+    z-index: 9999;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    animation: tiltBounce .15s ease;
+    animation-fill-mode: forwards;
+    text-decoration: none !important;
+}
+
+.p5-title .title-link:hover .shape-wrapper { 
+    transform: rotate(-6deg);
+    display: block; 
+}
+
+.p5-title .title-link:hover .shape-wrapper .shape.cyan-fill {
+    transform: scale(3,.1);
+}
+
+.p5-title .title-link:visited {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    background: none !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.p5-navbar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.p5-link-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0px 16px;
+    text-decoration: none;
+}
+
+.p5-link-wrapper .fallback {
+    font-family: 'Expose-Regular', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 1;
+    position: relative;
+    top: 15px;
+    left: 0;
+    color: #ffffff;
+    text-shadow: none !important;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: inline-block;
+    transform-origin: center;
+}
+
+.p5-link-wrapper .shape-wrapper { 
+    display: none; 
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.p5-link-wrapper:hover {
+    z-index: 9999;
+}
+
+.p5-link-wrapper:hover .shape-wrapper { 
+    transform: rotate(-6deg);
+    display: block; 
+}
+
+.p5-link-wrapper:hover .shape-wrapper .shape.cyan-fill {
+    transform: scale(3,.1);
+}
+
+.p5-link-wrapper:hover .fallback {
+    animation: tiltBounce .15s ease;
+    animation-fill-mode: forwards;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.p5-link-wrapper:nth-child(even):hover .shape-wrapper { 
+    transform: rotate(11deg); 
+}
+
+.p5-link-wrapper:nth-child(even):hover .fallback {
+    animation: tiltBounceAlt .15s ease;
+    animation-fill-mode: forwards;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.shape-wrapper {
+    filter: sepia(50%) saturate(3);
+}
+
+.shape-wrapper .shape {
+    transition: all .1s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    overflow: hidden;
+}
+
+.shape-wrapper .shape svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.shape-wrapper .shape.cyan-fill {
+    mix-blend-mode: screen;
+    animation-delay: 0.05s;
+    animation-duration: .4s;
+}
+
+.shape-wrapper .shape.red-fill {
+    animation-duration: .45s;
+    animation-delay: 0.08s;
+    opacity: .8;
+}
+
+.jelly {
+    -webkit-animation-name: jelly;
+    animation-name: jelly;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@keyframes tiltBounce {
+    0% {
+        transform: scale(1) rotate(-7deg);
+    }
+    50% {
+        transform: scale(1.5) rotate(-7deg);
+    }
+    100% {
+        transform: scale(1.15) rotate(-7deg);
+    }
+}
+
+@keyframes tiltBounceAlt {
+    0% {
+        transform: scale(1) rotate(7deg);
+    }
+    50% {
+        transform: scale(1.5) rotate(7deg);
+    }
+    100% {
+        transform: scale(1.15) rotate(7deg);
+    }
+}
+
+@keyframes jelly {
+    0% {
+        width: 100%; 
+        transform: scale(1.25,1) skewX(20deg) translateY(3px) rotateX(40deg) rotateY(10deg) rotateZ(-10deg);
+    }
+    50% { 
+        width: 100%; 
+        transform: scale(1.25,1.1) skewX(-15deg) translateY(-2px) translateZ(-30px); 
+    }
+    100% { 
+        width: 100%; 
+        transform: scale(1.25,1) skewX(20deg) translateY(3px) rotateX(-40deg) rotateY(-10deg) rotateZ(-15deg); 
     }
 }
 
@@ -382,13 +600,34 @@ a[href="indexRoyal.html"].title-link:visited {
     }
 }
 
-/* Dark Mode Styles */
+/* P5 Theme Toggle Button Styles */
 .theme-toggle-btn {
-    background: #28a745 !important;
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    font-family: inherit !important;
+    cursor: pointer !important;
+    margin: 0px 16px;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
 }
 
-.theme-toggle-btn:hover {
-    background: #1e7e34 !important;
+.theme-toggle-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.theme-toggle-btn:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.theme-toggle-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /* Version button styling - inherits all nav-btn properties */
@@ -934,5 +1173,35 @@ a[href="indexRoyal.html"].title-link:visited {
     
     .ui.table:last-child {
         margin-bottom: 50px !important;
+    }
+    
+    .p5-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .p5-link-wrapper {
+        margin: 0px 8px;
+        display: inline-block;
+    }
+    
+    .p5-link-wrapper .fallback {
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .p5-title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .p5-link-wrapper {
+        margin: 5px 4px;
+        display: block;
+        width: 45%;
+    }
+    
+    .p5-link-wrapper .fallback {
+        font-size: 1em;
     }
 }

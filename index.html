@@ -52,23 +52,108 @@
 </head>
 <body>
     <div id="content">
-        <div class="main-title">
-            <h1><a href="index.html" class="title-link">Persona 5 Fusion Calculator</a></h1>
+        <div class="p5-title">
+            <h1>
+                <a href="index.html" class="title-link">
+                    Persona 5 Fusion Calculator
+                    <div class="shape-wrapper">
+                        <div class="shape red-fill jelly">
+                            <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                                <polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "/>
+                            </svg>
+                        </div>
+                        <div class="shape cyan-fill jelly">
+                            <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                                <polygon fill="#00FFFF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 "/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </h1>
         </div>
-        <div class="nav-buttons">
-            <a href="#/list/" class="nav-btn">Persona</a>
-            <a href="#/skill/" class="nav-btn">Skills</a>
-            <a href="#/setting/" class="nav-btn">Settings</a>
-            <button id="theme-toggle" class="nav-btn theme-toggle-btn">Dark Mode</button>
-        </div>
-        <div class="version-nav">
-            <a href="indexRoyal.html" class="nav-btn version-btn">Switch to Persona 5 Royal</a>
+        <div class="p5-navbar">
+            <a class="p5-link-wrapper" href="#/list/">
+                <span class="fallback">Persona</span>
+                <div class="shape-wrapper">
+                    <div class="shape red-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#FF0000" points="0,7.1 127.3,0 32.3,64 4.8,58.2"/>
+                        </svg>
+                    </div>
+                    <div class="shape cyan-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#00FFFF" points="14,0.5 127.4,0 77.4,164 2.3,61.1 "/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a class="p5-link-wrapper" href="#/skill/">
+                <span class="fallback">Skills</span>
+                <div class="shape-wrapper">
+                    <div class="shape red-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#FF0000" points="15.5,0 70.7,0 118.1,32.7 43.1,47 "/>
+                        </svg>
+                    </div>
+                    <div class="shape cyan-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#00FFFF" points="17.3,0 105.1,0 68.8,45.6 24.3,39 "/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a class="p5-link-wrapper" href="#/setting/">
+                <span class="fallback">Settings</span>
+                <div class="shape-wrapper">
+                    <div class="shape red-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#FF0000" points="19.5,0,110.7,0,80.1,32.7,3.1,47 "/>
+                        </svg>
+                    </div>
+                    <div class="shape cyan-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#00FFFF" points="11,3,85.1,0 118.8,45.6,14.3,29 "/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a class="p5-link-wrapper" href="indexRoyal.html">
+                <span class="fallback">Royal</span>
+                <div class="shape-wrapper">
+                    <div class="shape red-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#FF0000" points="0,7.1 127.3,0 32.3,64 4.8,58.2"/>
+                        </svg>
+                    </div>
+                    <div class="shape cyan-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#00FFFF" points="14,0.5 127.4,0 77.4,164 2.3,61.1 "/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <button id="theme-toggle" class="p5-link-wrapper theme-toggle-btn">
+                <span class="fallback">Dark Mode</span>
+                <div class="shape-wrapper">
+                    <div class="shape red-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#FF0000" points="0,7.1 127.3,0 32.3,64 4.8,58.2"/>
+                        </svg>
+                    </div>
+                    <div class="shape cyan-fill jelly">
+                        <svg x="0px" y="0px" viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47">
+                            <polygon fill="#00FFFF" points="14,0.5 127.4,0 77.4,164 2.3,61.1 "/>
+                        </svg>
+                    </div>
+                </div>
+            </button>
         </div>
         <ng-view ng-app="myModule"></ng-view>
     </div>
     <script>
         // Dark mode toggle functionality
         const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleFallback = themeToggle.querySelector('.fallback');
         const body = document.body;
         
         // Check for saved theme preference or default to dark mode
@@ -76,21 +161,21 @@
         body.classList.add(currentTheme + '-theme');
         
         if (currentTheme === 'dark') {
-            themeToggle.textContent = 'Light Mode';
+            themeToggleFallback.textContent = 'Light Mode';
         } else {
-            themeToggle.textContent = 'Dark Mode';
+            themeToggleFallback.textContent = 'Dark Mode';
         }
         
         themeToggle.addEventListener('click', function() {
             if (body.classList.contains('light-theme')) {
                 body.classList.remove('light-theme');
                 body.classList.add('dark-theme');
-                themeToggle.textContent = 'Light Mode';
+                themeToggleFallback.textContent = 'Light Mode';
                 localStorage.setItem('theme', 'dark');
             } else {
                 body.classList.remove('dark-theme');
                 body.classList.add('light-theme');
-                themeToggle.textContent = 'Dark Mode';
+                themeToggleFallback.textContent = 'Dark Mode';
                 localStorage.setItem('theme', 'light');
             }
         });
