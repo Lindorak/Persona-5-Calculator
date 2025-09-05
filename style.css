@@ -821,6 +821,110 @@ span.theme-toggle-btn,
     position: relative;
     display: flex;
     align-items: center;
+    isolation: isolate;
+}
+
+/* Add white shape using a span element */
+.search-input-wrapper .search-white-shape {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f2e8;
+    clip-path: polygon(4px 0, calc(100% - 6px) 0, calc(100% - 8px) 100%, 6px 100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 0;
+    pointer-events: none;
+    transform: scale(1.03) translateX(1px) translateY(0.5px);
+}
+
+/* Geometric search input wrapper with animated shapes */
+.search-input-wrapper::before,
+.search-input-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+/* Red shape (behind) */
+.search-input-wrapper::before {
+    background: #FF0000;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 100%, 12px 100%);
+    transform: scale(1.1) translateX(-2px) translateY(-1px);
+    z-index: -2;
+}
+
+/* Cyan shape (front) */
+.search-input-wrapper::after {
+    background: #00FFFF;
+    clip-path: polygon(8px 0, calc(100% - 4px) 0, calc(100% - 12px) 100%, 4px 100%);
+    transform: scale(1.05) translateX(2px) translateY(1px);
+    z-index: -1;
+}
+
+/* Show shapes on focus */
+.search-input-wrapper:focus-within .search-white-shape {
+    opacity: 0.9;
+    transform: scale(1.05) translateX(1.5px) translateY(1px) rotate(0.2deg);
+}
+
+.search-input-wrapper:focus-within::before {
+    opacity: 0.7;
+    transform: scale(1.12) translateX(-3px) translateY(-2px) rotate(0.5deg);
+}
+
+.search-input-wrapper:focus-within::after {
+    opacity: 0.8;
+    transform: scale(1.07) translateX(3px) translateY(2px) rotate(-0.3deg);
+}
+
+/* Jelly animation for shapes */
+@keyframes jellySearchRed {
+    0%, 100% { 
+        transform: scale(1.12) translateX(-3px) translateY(-2px) rotate(0.5deg);
+    }
+    50% { 
+        transform: scale(1.15) translateX(-4px) translateY(-3px) rotate(1deg);
+    }
+}
+
+@keyframes jellySearchCyan {
+    0%, 100% { 
+        transform: scale(1.07) translateX(3px) translateY(2px) rotate(-0.3deg);
+    }
+    50% { 
+        transform: scale(1.1) translateX(4px) translateY(3px) rotate(-0.8deg);
+    }
+}
+
+@keyframes jellySearchWhite {
+    0%, 100% { 
+        transform: scale(1.05) translateX(1.5px) translateY(1px) rotate(0.2deg);
+    }
+    50% { 
+        transform: scale(1.07) translateX(2px) translateY(1.5px) rotate(0.5deg);
+    }
+}
+
+.search-input-wrapper:focus-within .search-white-shape {
+    animation: jellySearchWhite 2s ease-in-out infinite;
+}
+
+.search-input-wrapper:focus-within::before {
+    animation: jellySearchRed 2.5s ease-in-out infinite;
+}
+
+.search-input-wrapper:focus-within::after {
+    animation: jellySearchCyan 3s ease-in-out infinite;
 }
 
 /* Align clear button with search input */
@@ -839,22 +943,31 @@ span.theme-toggle-btn,
 
 .modern-search-input {
     background: #ffffff;
-    border: 2px solid #e9ecef;
-    border-radius: 25px;
+    border: none;
+    border-radius: 0;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
     padding: 12px 20px;
     font-size: 14px;
     font-family: 'Expose-Regular';
     color: #495057;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     min-width: 280px;
     outline: none;
+    position: relative;
+    z-index: 2;
+    background-clip: padding-box;
 }
 
 .modern-search-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+    box-shadow: 0 6px 16px rgba(255,0,0,0.3);
+    transform: translateY(-2px);
+    z-index: 3;
+}
+
+.modern-search-input:hover {
     transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
 }
 
 .modern-search-input::placeholder {
@@ -865,14 +978,16 @@ span.theme-toggle-btn,
 /* Dark mode search styling */
 .dark-theme .modern-search-input {
     background: #3d3d3d;
-    border-color: #555555;
     color: #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 .dark-theme .modern-search-input:focus {
-    border-color: #66b3ff;
-    box-shadow: 0 4px 12px rgba(102,179,255,0.3);
+    box-shadow: 0 6px 16px rgba(255,0,0,0.4);
+}
+
+.dark-theme .modern-search-input:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.5);
 }
 
 .dark-theme .modern-search-input::placeholder {
