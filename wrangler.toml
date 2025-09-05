@@ -1,0 +1,10 @@
+name = "persona5-calculator"
+main = "src/index.js"
+compatibility_date = "2023-10-30"
+
+[build]
+command = "npm run compile"
+
+[[assets]]
+bucket = "./"
+include = ["*.html", "*.css", "*.js", "fonts/**", "img/**", "data/**", "view/**", "favicon.ico"]
